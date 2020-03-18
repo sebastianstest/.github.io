@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap'); /*font download from google */
+
+/* ---------------------Fonts and text---------------
+
+html{
+    scroll-behavior: smooth;
+}
+*/
+h1{/*  */
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+}
+h2{/*  */
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+}
+body{ /*  */
+    font-family: 'Open Sans', sans-serif;
+}
+p{/*  */
+    font-size: 18px;
+    line-height: 160%;
+}
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* ------------ Mobile first, css settings for mobile ------------ */
+
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    align-items: center;
+}
+.header_icon{
+    padding: 10px;
+    height: 40px;
+    width: auto;
+}
+hr{
+    width: 100%;
+    height: 1px;
+    color: #999999;
+    border-style: solid;
+}
+
+
+nav{
+    grid-area: navigation;
+    background-color: #ccc;
+    text-align: center;
+    flex-direction: column;
+}
+nav.nav_list{
+    background-color: white;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.nav_icon{
+    height: 50px;
+    width: auto;
+}
+.nav_icon:hover {
+    opacity: 0.5;
+}
+.productWallClass.productWall{
+
+}
+
+article.productWallClass{
+    text-align: center;
+}
+.productWallClassImg{
+    width: 100%;
+    height: auto;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "navigation"
+    "main-content"
+    "footer";
+    grid-gap: 15px;
+    text-align: center;
+}
+
+main{
+    grid-area: main-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+
+}
+main article{
+    background-color: white;
+    padding: 15px;
+}
+
+
+
+footer{
+    grid-area: footer;
+    background-color: white;
+    padding: 15px;
+}
+
+/*--------------------------------- img. on mobile ------------------------*/
+    .swimg{
+        height: auto;
+        width: 100%;
+    }
+
+    .DevBannerImg{
+        height: auto;
+        width: 100%;
+    }
+
+
+
+article.video{
+    height: auto;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+
+
+
+
+
+    body{
+        background-color: white;
+    }
+    header.header-container{
+        width: 1100px;
+        margin: 0 auto;
+    }
+    section.grid-container{
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+
+    nav.nav_list{
+        background-color: white;
+        flex-direction: row;
+
+     }
+    a{
+        margin-right: 15px;
+        margin-left:  15px;
+        text-align: center;
+    }
+
+    article.productWallClass{
+        text-align: center;
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+    div.productWall{
+        width: 1100px;
+        margin: 0 auto;
+    }
+    .productWall{
+        width: 1100px;
+        height: auto;
+    }
+
+    hr{
+        width: 1100px;
+    }
+
+
+    div.main2{
+        grid-gap: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+
+        grid-area: main-content;
+    }
+    article.video{
+        height: auto;
+        width: 100%;
+    }
+    section.grid-container{
+
+
+    }
+    footer{
+        width: 1100px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
